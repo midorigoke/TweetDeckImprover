@@ -6,7 +6,7 @@ addEventListener('keydown', event => {
             document.querySelector('.js-account-item.is-selected').click();
         }
 
-        const account = document.querySelectorAll('.js-account-item')[event.keyCode - 49];
+        const account = document.querySelectorAll('.js-account-list .js-account-item')[event.keyCode - 49];
 
         if (account !== undefined){
             account.click();
