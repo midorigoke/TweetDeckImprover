@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "TweetDeck Improver",
-    "version": "18.02.03",
+    "version": "18.02.11",
     "icons": {},
     "permissions": [
     ],
@@ -11,7 +11,10 @@
     "content_scripts": [
         {
             "matches": ["https://tweetdeck.twitter.com/*"],
-            "js": ["shortcuts.js"],
+            "js": [
+                "shortcuts.js",
+                "keepHashtags.js"
+            ],
             "run_at": "document_end"
         }
     ]
